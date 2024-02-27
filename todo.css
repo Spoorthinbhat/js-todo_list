@@ -1,0 +1,96 @@
+@import url("https://fonts.googleapis.com/css2?family=Satisfy&display=swap");
+
+body {
+  margin: 0;
+  height: 100vh;
+  background-color: #003060;
+  font-family: "Satisfy", cursive; /* Change the font-family to "Satisfy" */
+}
+
+h1 {
+  text-align: center;
+  color: aliceblue;
+}
+
+.backdrop {
+  margin: auto;
+  width: 50%;
+  height: 100vh;
+  background-color: #68bbe3;
+  display: flex;
+  flex-direction: column;
+  border-radius: 20px;
+}
+
+.add {
+  display: flex;
+  width: 100%;
+}
+
+.inputt {
+  display: flex;
+  width: 100%;
+  height: fit-content;
+  margin-top: 4em;
+}
+
+#insert {
+  width: 75%;
+  height: 5em;
+  margin-left: 4em;
+  margin-right: 1em;
+}
+
+.addb {
+  margin-right: 2em;
+  width: 15%;
+  height: 4.3em;
+  display: flex;
+}
+
+button {
+  width: 100%;
+  height: 100%;
+  background-image: url("plus.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+#work {
+  margin-top: 1em;
+  margin-left: 1.7em;
+  font-size: 2em;
+  font-family: "Satisfy", cursive;
+}
+
+.point {
+  width: 77%;
+  margin-bottom: 3px;
+}
+
+.bot {
+  width: 95%;
+  position: absolute;
+  height: 1em;
+  bottom: 0px;
+  display: flex;
+  flex-wrap: wrap;
+  /* flex-shrink: inherit; */
+  flex-direction: row;
+  font-size: 1.5em;
+  margin-bottom: 2%;
+  font-size: 1.7rem;
+  text-shadow: -4px 6px 20px rgba(17, 16, 75, 0.81);
+}
+.box1 {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  margin-bottom: 2em;
+  margin: 5%;
+}
+.status {
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
