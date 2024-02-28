@@ -72,7 +72,8 @@ h1 {
 }
 
 .point {
-  width: 77%;
+  width: 80%;
+  display: flex;
   /* margin-bottom: 3px; */
 }
 
@@ -117,4 +118,9 @@ h1 {
   margin-bottom: 1px;
   word-wrap: break-word;
   /* padding: 0px; */
+}
+#icon {
+  position: absolute;
+  right: 30%;
+  visibility: hidden;
 }

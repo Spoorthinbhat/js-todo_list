@@ -5,7 +5,7 @@ let completed = 0;
 function add() {
   let line = document.getElementById("insert").value;
   console.count(line);
-  if (line == "") {
+  if (line === "") {
     alert("Add an Event");
     return;
   }
@@ -13,23 +13,19 @@ function add() {
   let checkid = "c_" + Date.now();
   document.getElementById("work").innerHTML +=
     "<div class='point'>" +
-    "<button id='sent'+ id='" +
+    "<i><img src='bullet.png'></i>" +
+    "<button id='sent' id='" +
     checkid +
     "' onclick='strike(this)'>" +
     line +
+    "<i><img src='cross.png' id='icon'></i>" +
     "<br>" +
     "</button>" +
     "</div>";
-  // "<div class='point'>" +
-  // "<input type='checkbox' id='" +
-  // checkid +
-  // "' onclick='strike(this)'>" +
-  // line +
-  // "<br>" +
-  // "</div>";
   document.getElementById("insert").value = "";
   comp();
 }
+
 function strike(a) {
   if (a.style.textDecoration === "line-through") {
     a.style.textDecoration = "none";
@@ -37,12 +33,12 @@ function strike(a) {
     completed--;
   } else {
     a.style.textDecoration = "line-through";
-    a.style.backgroundColor = "#FFFFFF";
+    // a.style.backgroundColor = "#FFFFFF";
     completed++;
   }
   comp();
 }
-X;
+
 function comp() {
   document.getElementById("status").innerText =
     "Completed : " + "\n" + completed;
