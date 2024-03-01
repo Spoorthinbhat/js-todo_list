@@ -72,7 +72,7 @@ h1 {
 }
 
 .point {
-  width: 80%;
+  width: 90%;
   display: flex;
   /* margin-bottom: 3px; */
 }
@@ -94,6 +94,7 @@ h1 {
   font-weight: 300;
   text-shadow: -4px 6px 20px rgba(17, 16, 75, 0.81);
   border-bottom-style: dashed;
+  justify-content: space-evenly;
 }
 .box1 {
   align-items: center;
@@ -123,4 +124,14 @@ h1 {
   position: absolute;
   right: 30%;
   visibility: hidden;
+}
+#cross {
+  background-image: url(cross.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 10%;
+  background-color: #68bbe3;
+  border: none;
+  justify-content: center;
+  align-items: center;
 }

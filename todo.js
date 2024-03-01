@@ -18,10 +18,11 @@ function add() {
     checkid +
     "' onclick='strike(this)'>" +
     line +
-    "<i><img src='cross.png' id='icon'></i>" +
+    "<button id='cross' onclick='deletelist(this)'></button>" +
     "<br>" +
     "</button>" +
     "</div>";
+  //to clear the text box
   document.getElementById("insert").value = "";
   comp();
 }
@@ -38,11 +39,17 @@ function strike(a) {
   }
   comp();
 }
+// comp() to update the status of complete status
 
 function comp() {
   document.getElementById("status").innerText =
     "Completed : " + "\n" + completed;
   document.getElementById("status_1").innerText = "Created : " + "\n" + count;
-  document.getElementById("status_2").innerText =
-    "To complete : " + "\n" + (count - completed);
+}
+function deletelist(element) {
+  // Get the parent element of the button to be deleted
+  let parentElement = element.parentElement;
+
+  // Remove the parent element from the DOM
+  parentElement.remove();
 }
